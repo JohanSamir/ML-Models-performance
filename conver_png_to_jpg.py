@@ -8,10 +8,16 @@ Created on Fri Jan 26 09:43:02 2018
 
 from glob import glob                                                           
 import cv2 
+import os
 pngs = glob('./*.png')
 
-for j in pngs:
+'''for j in pngs:
     img = cv2.imread(j)
     cv2.imwrite(j[:-3] + 'jpg', img)
+'''
+
+
+for j in pngs:
+    os.remove(j)
 
 

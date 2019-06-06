@@ -37,7 +37,7 @@ def create_bottleneck_file(sess, jpeg_data_tensor, bottleneck_tensor):
     #se obtienen todos los nombre de las imagenes en la carpeta train que tengan                   
     #extension .jpg
     #file_glob = os.path.join(image_dir, '*.jpg')
-    file_glob = os.path.join(image_dir, '*.png')
+    file_glob = os.path.join(image_dir, '*.jpg')
     #se organizan en el vector file_list todos las direcciones de las imagenes 
     #encontrados dentro de la carpeta train
     file_list.extend(gfile.Glob(file_glob))
